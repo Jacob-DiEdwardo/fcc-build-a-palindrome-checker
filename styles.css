@@ -1,0 +1,83 @@
+:root {
+  --blue-theme: #01246b;
+  --dark-theme: #3e3e42;
+  --red-theme: #be3144;
+  --white: #ffffef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blue-theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 14px;
+}
+
+.container {
+  margin: auto;
+  background-color: var(--white);
+  width: 50%;
+  padding: 20px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.container .details {
+  padding: 15px 0;
+}
+
+.container .result-text {
+  padding-top: 15px;
+}
+
+.container form#palindrome-form {
+  display: flex;
+}
+
+.container form#palindrome-form input#text-input {
+  flex-grow: 1;
+  margin-right: 15px;
+  padding: 5px 10px;
+}
+
+.container form#palindrome-form button#check-btn {
+  background-color: var(--blue-theme);
+  color: var(--white);
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.container form#palindrome-form button#check-btn:hover {
+  background-color: var(--dark-theme);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container form#palindrome-form {
+    flex-flow: column;
+  }
+
+  .container form#palindrome-form input#text-input {
+    margin-right: 0;
+  }
+
+  .container form#palindrome-form button#check-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
