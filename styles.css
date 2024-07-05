@@ -24,6 +24,7 @@ body {
   margin: auto;
   background-color: var(--white);
   width: 50%;
+  max-width: 500px;
   padding: 20px;
 }
 
